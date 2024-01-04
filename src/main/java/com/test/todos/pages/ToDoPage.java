@@ -22,6 +22,11 @@ public class ToDoPage extends BasePage {
 
 	@FindBy(how = How.XPATH, using = "//input[@ng-model='todo.completed']")
 	public static WebElement checkBox;
+	
+	@FindBy(how = How.XPATH, using = "//input[@ng-click='removeTodo(todo)']")
+	public static WebElement btnRemove;
+	
+	
 
 	public ToDoPage() throws IOException {
 		PageFactory.initElements(driver, this);
@@ -51,4 +56,9 @@ public class ToDoPage extends BasePage {
 		String element = driver.getPageSource();
 		return element;
 	}
+	
+	public void clickOnElement(WebElement element) {
+		element.click();
+	}	
+	
 }

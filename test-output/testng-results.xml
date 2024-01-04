@@ -1,32 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results total="1" passed="1" failed="0" skipped="0">
+<testng-results total="1" passed="0" failed="0" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-08-07T18:11:53Z" name="Suite" finished-at="2022-08-07T18:12:15Z" duration-ms="22404">
+  <suite started-at="2023-02-17T17:05:54Z" name="Default suite" finished-at="2023-02-17T17:05:54Z" duration-ms="86">
     <groups>
     </groups>
-    <test started-at="2022-08-07T18:11:53Z" name="Test" finished-at="2022-08-07T18:12:15Z" duration-ms="22404">
+    <test started-at="2023-02-17T17:05:54Z" name="Default test" finished-at="2023-02-17T17:05:54Z" duration-ms="86">
       <class name="com.todos.tests.AddToDOTest">
-        <test-method is-config="true" signature="setupTest(java.lang.String)[pri:0, instance:com.todos.tests.AddToDOTest@3e6f3f28]" started-at="2022-08-07T20:11:53Z" name="setupTest" finished-at="2022-08-07T20:12:11Z" duration-ms="18639" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="setupTest(java.lang.String)[pri:0, instance:com.todos.tests.AddToDOTest@f99f5e0]" started-at="2023-02-17T18:05:54Z" name="setupTest" finished-at="2023-02-17T18:05:54Z" duration-ms="0" status="FAIL">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'browser' is required by @Configuration on method setupTest but has not been marked @Optional or defined
+in C:\Users\pc\AppData\Local\Temp\testng-eclipse--175434572\testng-customsuite.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'browser' is required by @Configuration on method setupTest but has not been marked @Optional or defined
+in C:\Users\pc\AppData\Local\Temp\testng-eclipse--175434572\testng-customsuite.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:155)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:358)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:86)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:199)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:653)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method signature="iCanAddTodo()[pri:0, instance:com.todos.tests.AddToDOTest@3e6f3f28]" started-at="2022-08-07T20:12:11Z" name="iCanAddTodo" finished-at="2022-08-07T20:12:14Z" duration-ms="2709" status="PASS">
+        <test-method signature="iCanAddTodo()[pri:0, instance:com.todos.tests.AddToDOTest@f99f5e0]" started-at="2023-02-17T18:05:54Z" name="iCanAddTodo" finished-at="2023-02-17T18:05:54Z" duration-ms="8" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- iCanAddTodo -->
-        <test-method is-config="true" signature="cleanTest()[pri:0, instance:com.todos.tests.AddToDOTest@3e6f3f28]" started-at="2022-08-07T20:12:14Z" name="cleanTest" finished-at="2022-08-07T20:12:15Z" duration-ms="1028" status="PASS">
+        <test-method is-config="true" signature="cleanTest()[pri:0, instance:com.todos.tests.AddToDOTest@f99f5e0]" started-at="2023-02-17T18:05:54Z" name="cleanTest" finished-at="2023-02-17T18:05:54Z" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanTest -->
       </class> <!-- com.todos.tests.AddToDOTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
